@@ -35,7 +35,7 @@ export default function Home() {
 
     try {
       // ยิงไปที่ API ของเรา (Port 8000)
-      const response = await axios.post("https://fuuji-deepguard-api.hf.space", formData, {
+      const response = await axios.post("https://fuuji-deepguard-api.hf.space/predict", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },

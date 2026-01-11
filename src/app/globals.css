@@ -1,3 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@400;500;700&display=swap');
+/* Desktop: เพิ่ม padding ให้ card กว้างขึ้น */
+.responsive-card {
+  padding: 3.5rem 2.5rem !important;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .responsive-card {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    border-radius: 0 !important;
+    padding: 8vw 0 8vw 0 !important;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column !important;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  body, html, #__next, main {
+    width: 100vw !important;
+    min-width: 100vw !important;
+    max-width: 100vw !important;
+    height: 100vh !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+}
+
+body, html {
+  font-family: 'Michroma', 'IBM Plex Sans Thai', Arial, sans-serif !important;
+}
+/* Upload Video UI custom styles */
+.upload-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: radial-gradient(circle at 50% 50%, #23243a 0%, #181a2b 100%);
+}
+.upload-card {
+  background: rgba(35, 36, 58, 0.8);
+  border-radius: 20px;
+  padding: 48px 40px 32px 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.face-icon {
+  width: 80px;
+  margin-bottom: 16px;
+}
+.upload-title {
+  color: #ffe999;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+.upload-dropzone {
+  background: rgba(40, 42, 70, 0.7);
+  border-radius: 16px;
+  border: 2px dashed #ffe99944;
+  width: 320px;
+  height: 140px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+.upload-dropzone:hover {
+  border-color: #ffe999;
+}
+.upload-arrow {
+  font-size: 2.5rem;
+  color: #ffe999;
+  margin-bottom: 12px;
+}
+.upload-dropzone p {
+  color: #fff;
+  font-size: 1rem;
+}
+.upload-submit {
+  background: linear-gradient(90deg, #ffb86c 0%, #ff9a44 100%);
+  color: #23243a;
+  font-weight: bold;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 10px;
+  padding: 12px 36px;
+  cursor: pointer;
+  box-shadow: 0 2px 12px 0 #ffb86c33;
+  transition: background 0.2s;
+}
+.upload-submit:hover {
+  background: linear-gradient(90deg, #ff9a44 0%, #ffb86c 100%);
+}
 @import "tailwindcss";
 
 :root {
@@ -19,8 +125,4 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+

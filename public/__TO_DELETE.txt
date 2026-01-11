@@ -1,0 +1,8 @@
+face-wireframe.svg
+file.svg
+globe.svg
+next.svg
+vercel.svg
+window.svg
+
+# เหลือไว้แค่ logo.png ที่ใช้งานจริง
